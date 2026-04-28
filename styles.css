@@ -1,0 +1,115 @@
+/* ============================================
+   Ikigai Afribusiness — Capture page styles
+   Customize colors by editing the CSS variables
+   in the :root block below.
+   ============================================ */
+
+:root {
+  /* Brand colors */
+  --color-primary: #185FA5;
+  --color-primary-dark: #0C447C;
+  --color-primary-light: #E6F1FB;
+  --color-primary-border: #B5D4F4;
+
+  --color-accent: #FAC775;
+  --color-accent-bg: #FAEEDA;
+  --color-accent-dot: #BA7517;
+  --color-accent-text: #633806;
+
+  --color-cta: #1D9E75;
+  --color-cta-text: #E1F5EE;
+
+  --color-success-bg: #EAF3DE;
+  --color-success-text: #27500A;
+
+  /* Neutrals */
+  --color-bg: #ffffff;
+  --color-fg: #0a0a0a;
+  --color-muted: #6b7280;
+  --color-border: #e5e7eb;
+  --color-input: #d1d5db;
+
+  /* Avatar palette */
+  --av1-bg: #B5D4F4; --av1-fg: #0C447C;
+  --av2-bg: #9FE1CB; --av2-fg: #085041;
+  --av3-bg: #F5C4B3; --av3-fg: #712B13;
+  --av4-bg: #CECBF6; --av4-fg: #3C3489;
+
+  /* Typography */
+  --font-sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+
+  /* Radii */
+  --radius-sm: 0.5rem;
+  --radius-md: 0.75rem;
+}
+
+* { box-sizing: border-box; }
+html, body { margin: 0; padding: 0; background: var(--color-bg); color: var(--color-fg); font-family: var(--font-sans); }
+
+.pg { max-width: 680px; margin: 0 auto; }
+
+.topbar { background: var(--color-primary); padding: 10px 20px; text-align: center; }
+.topbar-txt { font-size: 13px; font-weight: 500; color: var(--color-primary-light); letter-spacing: 0.03em; }
+.topbar-txt span { color: var(--color-accent); font-weight: 500; }
+
+.hero { padding: 2.5rem 1.5rem 0; text-align: center; }
+.brand { display: flex; align-items: center; justify-content: center; gap: 8px; margin-bottom: 1.5rem; }
+.brand-logo { width: 32px; height: 32px; background: var(--color-primary); border-radius: 50%; display: flex; align-items: center; justify-content: center; }
+.brand-name { font-size: 14px; font-weight: 500; color: var(--color-primary); letter-spacing: 0.06em; text-transform: uppercase; }
+.brand-slogan { font-size: 11px; color: var(--color-primary); opacity: 0.7; letter-spacing: 0.04em; }
+
+.eyebrow { display: inline-block; background: var(--color-primary-light); color: var(--color-primary-dark); font-size: 11px; font-weight: 500; padding: 4px 14px; border-radius: 20px; letter-spacing: 0.08em; text-transform: uppercase; margin-bottom: 1.2rem; }
+.h1 { font-size: 26px; font-weight: 500; color: var(--color-fg); line-height: 1.3; margin-bottom: 1rem; }
+.h1 em { color: var(--color-primary); font-style: normal; }
+.sub { font-size: 15px; color: var(--color-muted); line-height: 1.8; max-width: 500px; margin: 0 auto 1.5rem; }
+
+.social-proof { display: flex; align-items: center; justify-content: center; gap: 8px; margin-bottom: 1.5rem; }
+.avatars { display: flex; }
+.av { width: 28px; height: 28px; border-radius: 50%; border: 2px solid var(--color-bg); display: flex; align-items: center; justify-content: center; font-size: 10px; font-weight: 500; margin-left: -6px; }
+.av:first-child { margin-left: 0; }
+.av1 { background: var(--av1-bg); color: var(--av1-fg); }
+.av2 { background: var(--av2-bg); color: var(--av2-fg); }
+.av3 { background: var(--av3-bg); color: var(--av3-fg); }
+.av4 { background: var(--av4-bg); color: var(--av4-fg); }
+.sp-text { font-size: 13px; color: var(--color-muted); }
+.sp-text strong { color: var(--color-fg); }
+
+.mockup { background: var(--color-primary-light); border-radius: var(--radius-md); padding: 1.5rem; margin: 1.5rem 0; display: flex; align-items: center; gap: 1.5rem; border: 0.5px solid var(--color-primary-border); }
+.book-visual { min-width: 110px; width: 110px; height: 150px; border-radius: 6px; overflow: hidden; box-shadow: 0 8px 20px -6px rgba(12, 68, 124, 0.35); }
+.book-visual img { width: 100%; height: 100%; object-fit: cover; display: block; }
+.mockup-right { flex: 1; text-align: left; }
+.mockup-title { font-size: 15px; font-weight: 500; color: var(--color-primary-dark); margin-bottom: 6px; }
+.mockup-desc { font-size: 13px; color: var(--color-primary); line-height: 1.6; margin-bottom: 10px; }
+.mockup-tags { display: flex; flex-wrap: wrap; gap: 6px; }
+.tag { background: var(--color-primary); color: var(--color-primary-light); font-size: 11px; padding: 3px 10px; border-radius: 20px; }
+
+.benefits { padding: 0 1.5rem 1.5rem; }
+.benefits-title { font-size: 13px; font-weight: 500; color: var(--color-muted); text-align: center; letter-spacing: 0.06em; text-transform: uppercase; margin-bottom: 1rem; }
+.ben-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+.ben-item { background: var(--color-bg); border: 0.5px solid var(--color-border); border-radius: var(--radius-md); padding: 0.9rem 1rem; display: flex; gap: 10px; align-items: flex-start; }
+.ben-icon { min-width: 24px; height: 24px; background: var(--color-primary-light); border-radius: 50%; display: flex; align-items: center; justify-content: center; }
+.ben-icon svg { width: 12px; height: 12px; }
+.ben-text { flex: 1; }
+.ben-title { font-size: 13px; font-weight: 500; color: var(--color-fg); margin-bottom: 2px; }
+.ben-sub { font-size: 12px; color: var(--color-muted); line-height: 1.4; }
+
+.form-section { padding: 0 1.5rem 2rem; }
+.form-box { background: var(--color-bg); border: 2px solid var(--color-primary); border-radius: var(--radius-md); padding: 1.5rem; }
+.form-header { text-align: center; margin-bottom: 1.2rem; }
+.form-title { font-size: 17px; font-weight: 500; color: var(--color-fg); margin-bottom: 6px; }
+.form-sub { font-size: 13px; color: var(--color-muted); line-height: 1.5; }
+.form-free { display: inline-block; background: var(--color-success-bg); color: var(--color-success-text); font-size: 11px; font-weight: 500; padding: 3px 12px; border-radius: 20px; margin-bottom: 8px; }
+
+.cta-btn { width: 100%; background: var(--color-cta); color: var(--color-cta-text); border: none; border-radius: var(--radius-md); padding: 15px; font-size: 15px; font-weight: 500; cursor: pointer; margin-top: 4px; letter-spacing: 0.02em; }
+.cta-btn:hover { opacity: 0.92; }
+
+.form-guarantee { display: flex; align-items: center; justify-content: center; gap: 6px; margin-top: 12px; color: var(--color-muted); }
+.lock-icon { width: 14px; height: 14px; opacity: 0.5; }
+.form-guarantee-text { font-size: 12px; color: var(--color-muted); text-align: center; }
+
+.urgency { background: var(--color-accent-bg); border: 0.5px solid var(--color-accent); border-radius: var(--radius-sm); padding: 10px 14px; margin-bottom: 12px; display: flex; gap: 8px; align-items: center; }
+.urgency-dot { min-width: 8px; height: 8px; border-radius: 50%; background: var(--color-accent-dot); }
+.urgency-text { font-size: 12px; color: var(--color-accent-text); line-height: 1.5; }
+
+.footer { padding: 1.5rem; border-top: 0.5px solid var(--color-border); text-align: center; }
+.footer-text { font-size: 12px; color: var(--color-muted); }
